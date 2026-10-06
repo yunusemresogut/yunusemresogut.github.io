@@ -1,0 +1,54 @@
+:root {
+  --cobalt: #1f4e9c;
+  --navy: #0c2244;
+  --cream: #f6eedf;
+  --gold: #f2c14e;
+  --coral: #e2604f;
+  --turquoise: #1fa3a8;
+  --text: #1d2433;
+  --muted: #5b6475;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--text);
+  font: 17px/1.65 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--cobalt); }
+header {
+  background: linear-gradient(160deg, var(--cobalt), var(--navy));
+  color: #fff;
+  text-align: center;
+  padding: 40px 16px 32px;
+}
+header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+header h1 { font-family: "Baloo 2", sans-serif; font-size: 2.2rem; margin: 12px 0 0; color: var(--gold); line-height: 1.2; }
+header p { margin: 4px 0 0; opacity: .85; }
+nav { margin-top: 16px; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+nav a { color: #fff; text-decoration: none; padding: 6px 14px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; font-size: .95rem; }
+nav a:hover, nav a[aria-current] { background: rgba(255,255,255,.15); }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--cream);
+  padding: 32px 24px 40px;
+  min-height: 60vh;
+}
+h2 { font-family: "Baloo 2", sans-serif; color: var(--cobalt); margin: 1.6em 0 .3em; line-height: 1.25; }
+h2:first-child { margin-top: 0; }
+h3 { margin: 1.2em 0 .2em; }
+.meta { color: var(--muted); font-size: .95rem; }
+.lang { float: right; font-size: .95rem; }
+.card { background: #fff; border-radius: 14px; padding: 16px 20px; margin: 14px 0; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.button { display: inline-block; background: var(--cobalt); color: #fff; text-decoration: none; padding: 10px 22px; border-radius: 12px; font-weight: 700; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: .95rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e3dccd; vertical-align: top; }
+footer { text-align: center; color: rgba(255,255,255,.7); padding: 24px 16px; font-size: .9rem; }
+footer a { color: rgba(255,255,255,.9); }
+@media (max-width: 560px) {
+  main { padding: 24px 16px 32px; }
+  header h1 { font-size: 1.8rem; }
+  table, thead, tbody, tr, th, td { display: block; }
+  th { border-bottom: none; padding-bottom: 0; }
+}
